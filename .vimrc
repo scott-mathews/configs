@@ -1,15 +1,15 @@
-" vimrc by Scott Mathews (Tempor4ry)
+" vimrc by Scott Mathews
+" Inspired by Spacemacs
 
 " Setup
 execute pathogen#infect()
 filetype plugin indent on
+filetype plugin on
 syntax on
 set number
 colorscheme monokai
 
 " Tabs
-set expandtab
-set shiftwidth=2
 set tabstop=2
 set softtabstop=0
 
@@ -22,6 +22,14 @@ set softtabstop=0
 let mapleader=" "
 " Show when leader key is pressed
 set showcmd
+
+" Comments
+" Add space after comment delimiter
+let g:NERDSpaceDelims = 1
+
+" Toggle comment
+noremap <Leader>;; :call NERDComment(0,"toggle")<CR>
+
 
 " Files - start with f
 noremap <Leader>fs :w<CR>
