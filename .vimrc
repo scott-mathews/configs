@@ -7,7 +7,13 @@ filetype plugin indent on
 filetype plugin on
 syntax on
 set number
-colorscheme monokai
+
+" ColorScheme
+if (has("termguicolors"))
+				set termguicolors
+endif
+set background=dark
+colorscheme spacemacs-theme
 
 " Tabs
 set tabstop=2
