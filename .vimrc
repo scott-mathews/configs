@@ -9,12 +9,12 @@ syntax on
 set number
 
 " ColorSchemes disabled by default
-" if (has("termguicolors"))
-"  set termguicolors
-" endif
-" set t_Co=256
-" set background=dark
-" colorscheme spacemacs-theme
+if (has("termguicolors"))
+ set termguicolors
+endif
+set t_Co=256
+set background=dark
+colorscheme space-vim-dark
 
 " Tabs
 set tabstop=4
