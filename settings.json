@@ -1,0 +1,228 @@
+{
+  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+
+  /* Font Settings */
+  "editor.fontSize": 15,
+
+  "rust.mode": "legacy",
+  "python.jediEnabled": false,
+  "editor.fontFamily": "'Consolas', 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "workbench.editorAssociations": [
+    {
+      "viewType": "jupyter.notebook.ipynb",
+      "filenamePattern": "*.ipynb"
+    },
+    {
+      "viewType": "jupyter-notebook",
+      "filenamePattern": "*.ipynb"
+    }
+  ],
+  "python.languageServer": "Default",
+  "editor.inlineSuggest.enabled": true,
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": true
+  },
+  "workbench.colorTheme": "Default Dark+ Experimental",
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+
+  /* New terminals will be created in the editor rather than the bottom panel */
+  "terminal.integrated.defaultLocation": "editor",
+
+  /* Vim Settings */
+  "vim.leader": "<Space>",
+  // fd to exit insert mode
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["f", "d"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // SPC g <*> -- Goto commands
+    {
+      "before": ["<leader>", "g", "d"],
+      "commands": ["editor.action.goToDeclaration"]
+    },
+
+    // SPC f <*> -- File commands
+    {
+      "before": ["<leader>", "f", "f"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["<leader>", "f", "r"],
+      "commands": ["workbench.action.reloadWindow"]
+    },
+    {
+      "before": ["<leader>", "f", "n"],
+      "commands": ["workbench.action.files.newUntitledFile"]
+    },
+    {
+      "before": ["<leader>", "f", "o"],
+      "commands": ["workbench.action.files.openFile"]
+    },
+    {
+      "before": ["<leader>", "f", "c"],
+      "commands": ["workbench.action.files.copyPathOfActiveFile"]
+    },
+    {
+      "before": ["<leader>", "f", "s"],
+      "commands": ["workbench.action.files.save"]
+    },
+    {
+      "before": ["<leader>", "f", "S"],
+      "commands": ["saveAll"]
+    },
+
+    // SPC q <*> -- Quit commands
+    {
+      "before": ["<leader>", "q", "q"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+
+    // SPC t <*> -- Toggle settings
+    {
+      "before": ["<leader>", "t", "m"],
+      "commands": ["workbench.action.toggleActivityBarVisibility"]
+    },
+    {
+      "before": ["<leader>", "t", "s"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    },
+    {
+      "before": ["<leader>", "t", "t"],
+      "commands": ["workbench.action.togglePanel"]
+    },
+    {
+      "before": ["<leader>", "t", "f"],
+      "commands": ["workbench.action.toggleFullScreen"]
+    },
+    {
+      "before": ["<leader>", "t", "w"],
+      "commands": ["workbench.action.toggleWordWrap"]
+    },
+    {
+      "before": ["<leader>", "t", "z"],
+      "commands": ["workbench.action.toggleZenMode"]
+    },
+    {
+      // toggle relative line numbers
+      "before": ["<leader>", "t", "r"],
+      "commands": ["editor.action.toggleRenderControlCharacter"]
+    },
+
+    // SPC w <*> -- Window commands
+    // Navigation
+    {
+      "before": ["<leader>", "w", "h"],
+      "commands": ["workbench.action.focusLeftGroup"]
+    },
+    {
+      "before": ["<leader>", "w", "j"],
+      "commands": ["workbench.action.focusBelowGroup"]
+    },
+    {
+      "before": ["<leader>", "w", "k"],
+      "commands": ["workbench.action.focusAboveGroup"]
+    },
+    {
+      "before": ["<leader>", "w", "l"],
+      "commands": ["workbench.action.focusRightGroup"]
+    },
+    // Movement
+    {
+      "before": ["<leader>", "w", "H"],
+      "commands": ["workbench.action.moveEditorToLeftGroup"]
+    },
+    {
+      "before": ["<leader>", "w", "J"],
+      "commands": ["workbench.action.moveEditorToBelowGroup"]
+    },
+    {
+      "before": ["<leader>", "w", "K"],
+      "commands": ["workbench.action.moveEditorToAboveGroup"]
+    },
+    {
+      "before": ["<leader>", "w", "L"],
+      "commands": ["workbench.action.moveEditorToRightGroup"]
+    },
+    {
+      "before": ["<leader>", "w", "g", "h"],
+      "commands": ["workbench.action.moveActiveEditorGroupLeft"]
+    },
+    {
+      "before": ["<leader>", "w", "g", "j"],
+      "commands": ["workbench.action.moveActiveEditorGroupDown"]
+    },
+    {
+      "before": ["<leader>", "w", "g", "k"],
+      "commands": ["workbench.action.moveActiveEditorGroupUp"]
+    },
+    {
+      "before": ["<leader>", "w", "g", "l"],
+      "commands": ["workbench.action.moveActiveEditorGroupRight"]
+    },
+    // Splitting
+    {
+      "before": ["<leader>", "w", "n"],
+      "commands": ["workbench.action.splitEditorOrthogonal"]
+    },
+    {
+      "before": ["<leader>", "w", "v"],
+      "commands": ["workbench.action.splitEditorRight"]
+    },
+    {
+      "before": ["<leader>", "w", "/"],
+      "commands": ["workbench.action.splitEditorRight"]
+    },
+    {
+      "before": ["<leader>", "w", "|"],
+      "commands": ["workbench.action.splitEditorRight"]
+    },
+    {
+      "before": ["<leader>", "w", "s"],
+      "commands": ["workbench.action.splitEditorDown"]
+    },
+    {
+      "before": ["<leader>", "w", "-"],
+      "commands": ["workbench.action.splitEditorDown"]
+    },
+    // Closing
+    {
+      "before": ["<leader>", "w", "c"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+    // Maximize
+    {
+      "before": ["<leader>", "w", "m"],
+      "commands": ["workbench.action.toggleEditorWidths"]
+    },
+
+    // SPC ; -- Comment
+    {
+      "before": ["<leader>", ";"],
+      "commands": ["editor.action.commentLine"]
+    },
+
+    // SPC ` -- New Terminal
+    {
+      "before": ["<leader>", "`"],
+      "commands": ["workbench.action.terminal.new"]
+    }
+  ],
+  "vim.easymotion": true,
+  "workbench.activityBar.visible": false,
+  "window.zoomLevel": -1
+}
